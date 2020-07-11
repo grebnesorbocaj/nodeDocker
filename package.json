@@ -1,0 +1,26 @@
+{
+  "name": "nodedocker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run": "npm run index.js",
+    "lint": "node_modules/.bin/eslint .",
+    "lint:fix": "node_modules/.bin/eslint . --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "husky": "^4.2.5"
+  },
+  "husky": {
+    "pre-commit": "lint:fix && npm run test"
+  }
+}
