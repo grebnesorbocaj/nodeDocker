@@ -21,6 +21,8 @@
     "husky": "^4.2.5"
   },
   "husky": {
-    "pre-commit": "lint:fix && npm run test"
+    "hooks": {
+      "pre-commit": "npm run lint:fix && git add ."
+    }
   }
 }
