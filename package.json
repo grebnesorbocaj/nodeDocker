@@ -1,15 +1,15 @@
 {
   "name": "nodedocker",
   "version": "1.0.0",
-  "description": "",
+  "description": "sample node api, musings about efficient apis and more",
   "main": "index.js",
   "scripts": {
-    "run": "npm run index.js",
+    "start": "node index.js",
     "lint": "node_modules/.bin/eslint .",
     "lint:fix": "node_modules/.bin/eslint . --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "diakou/grebnesorbocaj",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
