@@ -4,9 +4,11 @@
   "description": "sample node api, musings about efficient apis and more",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "docker:run": "echo \"run on localhost:8888\" && docker run -p 8888:3000 -it --rm diakou/test",
+    "docker:build": "docker image rm diakou/test && docker build -t diakou/test .",
     "lint": "node_modules/.bin/eslint .",
     "lint:fix": "node_modules/.bin/eslint . --fix",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "diakou/grebnesorbocaj",
