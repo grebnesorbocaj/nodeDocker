@@ -8,8 +8,8 @@
     "docker:build": "docker image rm diakou/test && docker build -t diakou/test .",
     "lint": "node_modules/.bin/eslint .",
     "lint:fix": "node_modules/.bin/eslint . --fix",
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./src/index.js",
+    "test": "jest --forceExit --collectCoverage"
   },
   "author": "diakou/grebnesorbocaj",
   "license": "ISC",
@@ -20,11 +20,19 @@
     "eslint": "^7.4.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.0",
-    "husky": "^4.2.5"
+    "husky": "^4.2.5",
+    "jest": "^26.1.0",
+    "supertest": "^4.0.2"
   },
   "husky": {
     "hooks": {
       "pre-commit": "npm run lint"
     }
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
   }
 }
