@@ -9,6 +9,7 @@
     "lint": "node_modules/.bin/eslint .",
     "lint:fix": "node_modules/.bin/eslint . --fix",
     "start": "node ./src/index.js",
+    "start:dev": "nodemon ./src/index.js",
     "test": "jest --forceExit --collectCoverage"
   },
   "author": "diakou/grebnesorbocaj",
@@ -22,6 +23,7 @@
     "eslint-plugin-import": "^2.22.0",
     "husky": "^4.2.5",
     "jest": "^26.1.0",
+    "nodemon": "^2.0.4",
     "supertest": "^4.0.2"
   },
   "husky": {
