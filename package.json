@@ -35,6 +35,10 @@
     "testEnvironment": "node",
     "coveragePathIgnorePatterns": [
       "/node_modules/"
+    ],
+    "verbose": true,
+    "setupFilesAfterEnv": [
+      "./test/setup.js"
     ]
   }
 }
