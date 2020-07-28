@@ -12,7 +12,7 @@ describe('src/index.js', () => {
     it('should return "hello boy"', async () => {
       const res = await request(server)
         .get('/');
-      expect(res.text).toEqual('hello boy');
+      expect(res.text).toContain('hello boy');
     });
   });
 });

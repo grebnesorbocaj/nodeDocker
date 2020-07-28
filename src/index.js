@@ -4,8 +4,8 @@ const reqTime = require('./utils/middleware/reqTime');
 
 const app = express();
 
-app.use(myLogger);
 app.use(reqTime);
+app.use(myLogger);
 
 app.get('/', (req, res) => {
   res.send(`hello boy, ${req.time}`);
