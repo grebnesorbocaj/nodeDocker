@@ -1,6 +1,7 @@
 {
   "name": "nodedocker",
   "version": "1.0.0",
+  "repository": "https://github.com/grebnesorbocaj/nodeDocker",
   "description": "sample node api, musings about efficient apis and more",
   "main": "index.js",
   "scripts": {
