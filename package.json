@@ -33,7 +33,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint"
+      "pre-commit": "printf '\n~~~~~~~~~~~~~\nrun lint and unit tests please :)\n~~~~~~~~~~~~\n\n'"
     }
   },
   "jest": {

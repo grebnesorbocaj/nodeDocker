@@ -9,7 +9,7 @@ on:
 
 jobs:
   test:
-    name: Running Unit Tests
+    name: Lint and Run Unit Tests
 
     runs-on: ubuntu-latest
 
@@ -19,7 +19,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Install
-      run: npm install
-    - name: Run tests
-      run: npm test
+    - name: Install Stage
+      run: npm ci
+    - name: Lint Stage
+      run: npm run lint
+    - name: Test Stage
+      run: npm run test
