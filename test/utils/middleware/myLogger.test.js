@@ -15,7 +15,7 @@ describe('src/utils/middleware/myLogger.js', () => {
       const req = stubInput; const res = ''; const
         next = jest.fn();
       target(req, res, next);
-      expect(console.log.mock.calls[0][0]).toBe('Logging something from function');
+      expect(console.log.mock.calls[0][0]).toBe('Logging something from function myLogger :)');
     });
   });
 });
