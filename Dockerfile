@@ -7,7 +7,7 @@ WORKDIR /usr/src/app
 COPY . .
 
 # install dependencies
-RUN npm install
+RUN npm ci
 
 # tell the port number the container should expose
 EXPOSE 3000
