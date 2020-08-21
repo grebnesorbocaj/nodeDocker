@@ -14,7 +14,7 @@ const logStream = rfs.createStream('access.log', {
   path: path.join(__dirname, 'log'),
 });
 
-app.use(reqTime);
+     app.use(reqTime);
 app.use(myLogger);
 app.use(morgan('common', { stream: logStream }));
 
