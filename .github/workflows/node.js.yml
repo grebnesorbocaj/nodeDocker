@@ -22,6 +22,6 @@ jobs:
     - name: Install Stage
       run: npm ci
     - name: Lint Stage
-      run: npm lint
+      run: npm run lint
     - name: Test Stage
-      run: npm test
+      run: npm run test
