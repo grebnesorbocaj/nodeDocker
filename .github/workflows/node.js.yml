@@ -9,7 +9,7 @@ on:
 
 jobs:
   test:
-    name: Running Unit Tests
+    name: Lint and Run Unit Tests
 
     runs-on: ubuntu-latest
 
