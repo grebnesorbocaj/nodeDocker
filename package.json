@@ -5,7 +5,7 @@
   "description": "sample node api, musings about efficient apis and more",
   "main": "index.js",
   "scripts": {
-    "docker:run": "echo \"run on localhost:8888\" && docker run -p 8888:3000 -it --rm diakou/node-docker",
+    "docker:run": "echo \"run on localhost:8888\" && docker run --name nodeDocker -p 8888:3000 -it --rm diakou/node-docker",
     "docker:build": "docker image rm diakou/node-docker && docker build -t diakou/node-docker .",
     "lint": "node_modules/.bin/eslint .",
     "lint:fix": "node_modules/.bin/eslint . --fix",
